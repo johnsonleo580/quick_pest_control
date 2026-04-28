@@ -17,7 +17,7 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const info = [
-    { icon: Phone, label: "Phone", value: "9865066266", href: "tel:+18005551234" },
+    { icon: Phone, label: "Phone", value: "9865066266", href: "tel:+19865066266" },
     { icon: Mail, label: "Email", value: "hello@greenshield.com", href: "mailto:hello@greenshield.com" },
     { icon: MapPin, label: "Service Area", value: "Greater Metro Region" },
     { icon: Clock, label: "Hours", value: "Mon–Sat · 7am – 7pm" },
@@ -88,7 +88,7 @@ function ContactPage() {
           <div className="p-6 rounded-2xl text-primary-foreground" style={{ background: "var(--gradient-hero)", boxShadow: "var(--shadow-elegant)" }}>
             <h3 className="font-bold text-lg">Pest Emergency?</h3>
             <p className="text-sm text-primary-foreground/85 mt-2">Wasps, rodents indoors, or bed bug discovery — call us right now for priority same-day service.</p>
-            <a href="tel:+18005551234" className="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-background text-foreground font-semibold">
+            <a href="tel:+19865066266" className="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-background text-foreground font-semibold">
               <Phone className="h-4 w-4" /> 9865066266
             </a>
           </div>

@@ -98,7 +98,7 @@ function Header() {
           <Link to="/contact" className={linkBase} activeProps={{ className: "text-primary font-semibold" }}>Contact</Link>
         </nav>
         <div className="hidden md:flex items-center">
-          <a href="tel:+18005551234" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-primary-foreground shadow-md hover:opacity-90 transition-opacity" style={{ background: "var(--gradient-cta)" }}>
+          <a href="tel:+19865066266" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-primary-foreground shadow-md hover:opacity-90 transition-opacity" style={{ background: "var(--gradient-cta)" }}>
             <Phone className="h-4 w-4" /> 9865066266
           </a>
         </div>
@@ -117,7 +117,7 @@ function Header() {
           <Link to="/services" className={linkBase} activeProps={{ className: "text-primary font-semibold" }} onClick={closeMenu}>Services</Link>
           <Link to="/contact" className={linkBase} activeProps={{ className: "text-primary font-semibold" }} onClick={closeMenu}>Contact</Link>
           
-          <a href="tel:+18005551234" className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 rounded-full text-sm font-semibold text-primary-foreground shadow-md hover:opacity-90 transition-opacity text-center" style={{ background: "var(--gradient-cta)" }}>
+          <a href="tel:+19865066266" className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 rounded-full text-sm font-semibold text-primary-foreground shadow-md hover:opacity-90 transition-opacity text-center" style={{ background: "var(--gradient-cta)" }}>
             <Phone className="h-4 w-4" /> 9865066266
           </a>
         </div>

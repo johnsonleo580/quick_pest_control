@@ -40,7 +40,7 @@ function Index() {
               <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-black font-bold shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-105 hover:bg-green-400 transition-all">
                 Dispatch Technician <ArrowRight className="h-4 w-4" />
               </Link>
-              <a href="tel:+18005551234" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-green-500/30 text-white font-semibold hover:bg-white/10 transition-colors">
+              <a href="tel:+19865066266" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-green-500/30 text-white font-semibold hover:bg-white/10 transition-colors">
                 <Phone className="h-4 w-4 text-green-400" /> 9865066266
               </a>
             </div>
@@ -293,7 +293,7 @@ function Index() {
             <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-background text-foreground font-semibold hover:scale-105 transition-transform">
               Book Free Inspection <ArrowRight className="h-4 w-4" />
             </Link>
-            <a href="tel:+18005551234" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/30 text-primary-foreground font-semibold hover:bg-white/10 transition-colors">
+            <a href="tel:+19865066266" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/30 text-primary-foreground font-semibold hover:bg-white/10 transition-colors">
               <Phone className="h-4 w-4" /> Call 9865066266
             </a>
           </div>
