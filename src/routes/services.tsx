@@ -187,7 +187,7 @@ function ServicesPage() {
             </p>
           </div>
           <div className="text-center md:text-right">
-            <a href="tel:+19865066266" className="inline-flex items-center gap-2 px-6 py-4 rounded-full text-primary-foreground font-semibold text-lg" style={{ background: "var(--gradient-cta)" }}>
+            <a href="tel:+919865066266" className="inline-flex items-center gap-2 px-6 py-4 rounded-full text-primary-foreground font-semibold text-lg" style={{ background: "var(--gradient-cta)" }}>
               <Phone className="h-5 w-5" /> Call Now
             </a>
           </div>
