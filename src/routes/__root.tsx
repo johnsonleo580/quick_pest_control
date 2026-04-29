@@ -32,18 +32,52 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "GreenShield Pest Control — Safe & Effective Pest Solutions" },
-      { name: "description", content: "Family-safe pest control services for homes and businesses. Termites, rodents, roaches and more." },
-      { property: "og:title", content: "GreenShield Pest Control" },
-      { property: "og:description", content: "Family-safe pest control services for homes and businesses." },
+      { title: "Quick Pest Control — Safe & Effective Local Pest Solutions" },
+      { name: "description", content: "Family-safe local pest control services for homes and businesses across Tamil Nadu. Termites, rodents, roaches and more." },
+      { property: "og:title", content: "Quick Pest Control" },
+      { property: "og:description", content: "Family-safe local pest control services for homes and businesses across Tamil Nadu." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@QuickPestControl" },
+      { name: "geo.region", content: "IN-TN" },
+      { name: "geo.placename", content: "Tamil Nadu, India" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Quick Pest Control",
+          "image": "https://quickpestcontrol.com/hero-pest.jpg",
+          "@id": "https://quickpestcontrol.com",
+          "url": "https://quickpestcontrol.com",
+          "telephone": "+919865066266",
+          "email": "hello@quickpestcontrol.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "131, Alamedu, Union Office Back Side",
+            "addressLocality": "Pallipalayam",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Tamil Nadu"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "07:00",
+            "closes": "19:00"
+          }
+        }),
       },
     ],
   }),
@@ -130,7 +164,7 @@ function Footer() {
   return (
     <footer className="border-t border-border bg-secondary/40 mt-20">
       <div className="container mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} GreenShield Pest Control. Licensed & Insured.</p>
+        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Quick Pest Control. Licensed & Insured.</p>
         <div className="flex gap-6 text-sm">
           <Link to="/about" className="text-muted-foreground hover:text-primary">About</Link>
           <Link to="/services" className="text-muted-foreground hover:text-primary">Services</Link>

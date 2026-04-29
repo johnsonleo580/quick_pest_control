@@ -5,12 +5,13 @@ import ecoSpray from "@/assets/eco-spray.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — GreenShield Pest Control" },
-      { name: "description", content: "Termite, rodent, roach, ant, bed bug, mosquito and commercial pest control. Eco-friendly treatments backed by a 100% guarantee." },
-      { property: "og:title", content: "Pest Control Services" },
-      { property: "og:description", content: "Comprehensive pest control for residential and commercial properties." },
+      { title: "Pest Control Services | Exterminators Across Tamil Nadu" },
+      { name: "description", content: "Termite, rodent, roach, ant, bed bug, mosquito and commercial pest control services across Tamil Nadu. Eco-friendly treatments." },
+      { property: "og:title", content: "Pest Control Services Tamil Nadu" },
+      { property: "og:description", content: "Comprehensive pest control for residential and commercial properties across all districts in Tamil Nadu." },
       { property: "og:image", content: ecoSpray },
       { name: "twitter:image", content: ecoSpray },
+      { name: "keywords", content: "commercial pest control, residential exterminator, tamil nadu pest control services, termite control, rodent removal, bed bug treatment" },
     ],
   }),
   component: ServicesPage,

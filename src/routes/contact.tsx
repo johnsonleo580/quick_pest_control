@@ -5,10 +5,11 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — GreenShield Pest Control" },
-      { name: "description", content: "Get a free pest control inspection. Call 9865066266, email hello@greenshield.com, or send a message — same-day response guaranteed." },
-      { property: "og:title", content: "Contact GreenShield Pest Control" },
-      { property: "og:description", content: "Get a free pest inspection — fast response, no obligation." },
+      { title: "Contact Us | Quick Pest Control Tamil Nadu" },
+      { name: "description", content: "Get a free pest control inspection anywhere in Tamil Nadu. Call 9865066266, email hello@quickpestcontrol.com, or send a message — same-day response guaranteed." },
+      { property: "og:title", content: "Contact Quick Pest Control Tamil Nadu" },
+      { property: "og:description", content: "Get a free pest inspection across all districts in Tamil Nadu — fast response, no obligation." },
+      { name: "keywords", content: "contact pest control, free pest inspection, tamil nadu exterminator phone number, pest control contact, exterminator contact" },
     ],
   }),
   component: ContactPage,
@@ -18,8 +19,8 @@ function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const info = [
     { icon: Phone, label: "Phone", value: "9865066266", href: "tel:+919865066266" },
-    { icon: Mail, label: "Email", value: "hello@greenshield.com", href: "mailto:hello@greenshield.com" },
-    { icon: MapPin, label: "Service Area", value: "Greater Metro Region" },
+    { icon: Mail, label: "Email", value: "hello@quickpestcontrol.com", href: "mailto:hello@quickpestcontrol.com" },
+    { icon: MapPin, label: "Address", value: "131, Alamedu, Union Office Back Side, Pallipalayam, Erode, TamilNadu" },
     { icon: Clock, label: "Hours", value: "Mon–Sat · 7am – 7pm" },
   ];
 
@@ -163,11 +164,11 @@ function ContactPage() {
         <div className="rounded-3xl p-10 bg-secondary/40 border border-border">
           <div className="text-center max-w-2xl mx-auto">
             <span className="text-sm font-bold tracking-widest text-primary uppercase">Service Area</span>
-            <h2 className="mt-3 text-3xl font-bold">Proudly serving the greater metro region</h2>
-            <p className="mt-3 text-muted-foreground">Including all surrounding suburbs within 50 miles of downtown.</p>
+            <h2 className="mt-3 text-3xl font-bold">Proudly serving all of Tamil Nadu</h2>
+            <p className="mt-3 text-muted-foreground">Covering every district across the state.</p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-2">
-            {["Downtown", "Northside", "Eastview", "Westwood", "Southbrook", "Lakeshore", "Greenfield", "Maplewood", "Riverside", "Hilltop", "Pinegrove", "Oakridge"].map((c) => (
+            {["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Tiruppur", "Vellore", "Thoothukudi", "Dindigul", "Thanjavur"].map((c) => (
               <span key={c} className="px-4 py-2 rounded-full bg-card border border-border text-sm font-medium">{c}</span>
             ))}
           </div>

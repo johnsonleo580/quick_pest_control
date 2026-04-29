@@ -5,12 +5,13 @@ import teamImg from "@/assets/about-team.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — GreenShield Pest Control" },
-      { name: "description", content: "15+ years protecting families and businesses with eco-friendly pest control. Family-owned, licensed, and trusted by 12,000+ homes." },
-      { property: "og:title", content: "About GreenShield Pest Control" },
-      { property: "og:description", content: "Family-owned, eco-friendly pest control with 15+ years of experience." },
+      { title: "About Our Local Pest Control Company — Quick Pest Control" },
+      { name: "description", content: "25+ years protecting families and businesses across Tamil Nadu with eco-friendly pest control. Family-owned, licensed, and trusted locally." },
+      { property: "og:title", content: "About Quick Pest Control - Tamil Nadu Experts" },
+      { property: "og:description", content: "Family-owned, eco-friendly local pest control across Tamil Nadu with 25+ years of experience." },
       { property: "og:image", content: teamImg },
       { name: "twitter:image", content: teamImg },
+      { name: "keywords", content: "local pest control company, family owned exterminator, pest control tamil nadu, trusted exterminators" },
     ],
   }),
   component: AboutPage,
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   const stats = [
     { icon: Users, label: "Happy Clients", value: "12,000+" },
-    { icon: Award, label: "Years Experience", value: "15+" },
+    { icon: Award, label: "Years Experience", value: "25+" },
     { icon: ShieldCheck, label: "Satisfaction", value: "100%" },
     { icon: Leaf, label: "Eco-Safe Treatments", value: "100%" },
   ];
@@ -39,8 +40,8 @@ function AboutPage() {
   ];
 
   const milestones = [
-    { year: "2009", text: "Founded as a family business in our hometown garage." },
-    { year: "2013", text: "Reached 1,000 customers and certified as an eco-friendly provider." },
+    { year: "1999", text: "Founded as a family business in our hometown garage." },
+    { year: "2005", text: "Reached 1,000 customers and certified as an eco-friendly provider." },
     { year: "2017", text: "Expanded to commercial pest control and added 20 technicians." },
     { year: "2021", text: "Crossed 10,000 happy households and won Best Local Service." },
     { year: "2024", text: "Launched our 100% satisfaction guarantee and free re-treatment promise." },
@@ -53,9 +54,9 @@ function AboutPage() {
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,white,transparent_50%)]" />
         <div className="container mx-auto px-6 max-w-3xl text-center relative">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur text-xs font-semibold tracking-wide">
-            <Heart className="h-3.5 w-3.5" /> FAMILY-OWNED SINCE 2009
+            <Heart className="h-3.5 w-3.5" /> FAMILY-OWNED SINCE 1999
           </span>
-          <h1 className="mt-6 text-4xl md:text-6xl font-bold tracking-tight">About GreenShield</h1>
+          <h1 className="mt-6 text-4xl md:text-6xl font-bold tracking-tight">About Quick Pest Control</h1>
           <p className="mt-4 text-lg text-primary-foreground/85">A family-owned company on a mission to make pest control safer, smarter, and friendlier — one home at a time.</p>
         </div>
       </section>
@@ -65,7 +66,7 @@ function AboutPage() {
         <div className="relative">
           <img
             src={teamImg}
-            alt="GreenShield technician at a customer's home"
+            alt="Quick Pest Control technician at a customer's home"
             loading="lazy"
             width={1280}
             height={896}
@@ -76,10 +77,10 @@ function AboutPage() {
           <span className="text-sm font-bold tracking-widest text-primary uppercase">Our Story</span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold">Built on trust, grown by referrals</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Founded in 2009 by Mark Johnson, GreenShield was born from a simple belief: protecting your home shouldn't mean compromising your family's health. After watching his own kids react to harsh chemicals from another company, Mark set out to do things differently.
+            Founded in 1999 by Mark Johnson, Quick Pest Control was born from a simple belief: protecting your home shouldn't mean compromising your family's health. After watching his own kids react to harsh chemicals from another company, Mark set out to do things differently.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            We pioneered eco-conscious treatments that actually work — and we've never looked back. Today, our team of certified technicians serves thousands of homes and businesses across the metro region, with the same care we'd give our own family.
+            We pioneered eco-conscious treatments that actually work — and we've never looked back. Today, our team of certified technicians serves thousands of homes and businesses across all districts of Tamil Nadu, with the same care we'd give our own family.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Over 80% of our new business comes from referrals. That's not luck — it's the result of showing up on time, doing the job right, and standing behind our work.
@@ -140,7 +141,7 @@ function AboutPage() {
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="text-center">
             <span className="text-sm font-bold tracking-widest text-primary uppercase">Our Journey</span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">15 years of growth</h2>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold">25+ years of excellence</h2>
           </div>
           <ol className="mt-12 relative border-l-2 border-primary/30 ml-4 space-y-8">
             {milestones.map((m) => (
@@ -158,7 +159,7 @@ function AboutPage() {
       <section className="container mx-auto px-6 py-20">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-bold tracking-widest text-primary uppercase">Meet the Team</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-bold">The faces behind GreenShield</h2>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold">The faces behind Quick Pest Control</h2>
           <p className="mt-4 text-muted-foreground">Certified, friendly, and ready to help.</p>
         </div>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -178,7 +179,7 @@ function AboutPage() {
       {/* CTA */}
       <section className="container mx-auto px-6 pb-20">
         <div className="rounded-3xl p-10 md:p-14 text-center text-primary-foreground" style={{ background: "var(--gradient-hero)", boxShadow: "var(--shadow-elegant)" }}>
-          <h2 className="text-3xl md:text-4xl font-bold">Experience the GreenShield difference</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Experience the Quick Pest Control difference</h2>
           <p className="mt-4 text-primary-foreground/85 max-w-xl mx-auto">Join 12,000+ neighbors who trust us with their homes.</p>
           <Link to="/contact" className="inline-flex mt-8 items-center gap-2 px-8 py-4 rounded-full bg-background text-foreground font-semibold hover:scale-105 transition-transform">
             Get Your Free Quote <ArrowRight className="h-4 w-4" />

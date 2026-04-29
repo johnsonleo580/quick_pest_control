@@ -7,12 +7,13 @@ import familySafe from "@/assets/family-safe.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "GreenShield Pest Control — Safe, Fast, Guaranteed" },
-      { name: "description", content: "Eco-friendly pest control for homes & businesses. Same-day service, licensed technicians, 100% satisfaction guarantee. Call 9865066266." },
-      { property: "og:title", content: "GreenShield Pest Control" },
-      { property: "og:description", content: "Eco-friendly pest control. Same-day service." },
+      { title: "Quick Pest Control — Local Exterminators Across Tamil Nadu" },
+      { name: "description", content: "Eco-friendly pest control for homes & businesses across Tamil Nadu. Same-day service, licensed technicians, 100% satisfaction guarantee. Call 9865066266." },
+      { property: "og:title", content: "Local Quick Pest Control" },
+      { property: "og:description", content: "Eco-friendly pest control across Tamil Nadu. Same-day service." },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
+      { name: "keywords", content: "pest control tamil nadu, exterminator chennai, pest control coimbatore, pest control erode, local pest control, termite treatment, rodent removal" },
     ],
   }),
   component: Index,
@@ -77,7 +78,7 @@ function Index() {
         <div className="container mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { icon: Users, n: "12,000+", l: "Homes Treated" },
-            { icon: Award, n: "15+", l: "Years Experience" },
+            { icon: Award, n: "25+", l: "Years Experience" },
             { icon: Star, n: "4.9/5", l: "Customer Rating" },
             { icon: ShieldCheck, n: "100%", l: "Guarantee" },
           ].map((s) => (
@@ -93,7 +94,7 @@ function Index() {
       {/* WHY US */}
       <section className="container mx-auto px-6 py-20">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-sm font-bold tracking-widest text-primary uppercase">Why GreenShield</span>
+          <span className="text-sm font-bold tracking-widest text-primary uppercase">Why Quick Pest Control</span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold">Pest control done the right way</h2>
           <p className="mt-4 text-muted-foreground">We combine science-backed treatments with eco-friendly products so your home stays safe — for everyone in it.</p>
         </div>
@@ -227,8 +228,8 @@ function Index() {
           </div>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {[
-              { name: "Sarah M.", role: "Homeowner · Suburb", text: "GreenShield came out same day for a wasp nest by our front door. Quick, polite, and the price was exactly what they quoted." },
-              { name: "David L.", role: "Restaurant Owner", text: "We've used three companies. GreenShield is the only one that actually solved our roach problem — and kept it solved for 2 years now." },
+              { name: "Sarah M.", role: "Homeowner · Suburb", text: "Quick Pest Control came out same day for a wasp nest by our front door. Quick, polite, and the price was exactly what they quoted." },
+              { name: "David L.", role: "Restaurant Owner", text: "We've used three companies. Quick Pest Control is the only one that actually solved our roach problem — and kept it solved for 2 years now." },
               { name: "Priya K.", role: "Mother of 2", text: "I was nervous about chemicals around my kids. They explained every product and we felt completely safe. Highly recommend!" },
             ].map((t) => (
               <div key={t.name} className="p-8 rounded-2xl bg-card border border-border" style={{ boxShadow: "var(--shadow-soft)" }}>
